@@ -1,0 +1,32 @@
+/* background color for most of UI elements like background of dialogs, shell, OSD, also, main button color */
+$bg-default: #3f3e39;
+/* submenu background on main color */
+$bg-sub-menu: #3a3a34;
+/* separators in system panels */
+$bg-separator: #2c2c28;
+/* lighter border */
+$bg-lighter-border: #e95420;
+/* selection */
+$bg-selection: #dd4814;
+/* darker (borders) */
+$bg-lighter-border: #bb3e11;
+/* hover buttons */
+$bg-hover-button: rgba(238, 238, 236, 0.1);
+/* modal dialogs borders, workspace switcher… */
+$bg-modal: rgba(238, 238, 236, 0.2);
+
+$bg-modal-focus: rgba(255, 255, 255, 0.3);
+
+$bg-modal-active: rgba(255, 255, 255, 0.1);
+
+
+/* note: a lot of variations of alpha around 238, 238, 236, following the shell */
+/* example: search entry icon: default (not hover) */
+$fc-default: rgba(238, 238, 236, 0.7);
+/* hovered is mostly white, like all active text */
+$fc-hover: #eeeeec;
+/* lockscreen color */
+$fc-lockscreen: #2c001e;
+
+/* shadow color default */
+$sc-default: black;

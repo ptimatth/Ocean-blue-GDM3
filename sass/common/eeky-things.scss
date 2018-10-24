@@ -1,0 +1,8 @@
+/* Eeeky things */
+
+.magnifier-zoom-region {
+  border: 2px solid #dd4814;
+  &.full-screen {
+    border-width: 0;
+  }
+}

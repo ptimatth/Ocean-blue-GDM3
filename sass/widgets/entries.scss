@@ -1,0 +1,26 @@
+
+/* Entries */
+StEntry {
+  border-radius: 50px;
+  padding: 8px;
+  border-width: 0px;
+  font-size: 80%;
+  color: #161616;
+  background-color: rgba(255, 255, 255, 0.5);
+  selection-background-color: #dd4814;
+  selected-color: #ffffff;
+  &:focus {
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-color: rgba(154, 154, 142, 0.5);
+  }
+  &:insensitive {
+    color: #949796;
+    border-color: #363633;
+    box-shadow: none;
+  }
+  StIcon.capslock-warning {
+    icon-size: 16px;
+    warning-color: #f57900;
+    padding: 0 4px;
+  }
+}

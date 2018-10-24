@@ -27,7 +27,7 @@ else
 	sudo cp $workdir/bg-boat.jpg /usr/share/backgrounds/bg-gdm.jpg	
 fi
 
-cp $workdir/ubuntu.css ./theme/gnome-shell.css
+cp $workdir/gdm.css ./theme/gnome-shell.css
 cp $workdir/gnome-shell-theme.gresource.xml $workdir/theme/
 
 cd $workdir/theme

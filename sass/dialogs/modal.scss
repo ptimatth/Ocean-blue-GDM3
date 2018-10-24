@@ -1,0 +1,44 @@
+/* Modal Dialogs */
+
+.headline {
+  font-size: 110%;
+}
+
+.lightbox {
+  background-color: black;
+}
+
+.flashspot {
+  background-color: white;
+}
+
+.modal-dialog {
+  border-radius: 9px;
+  color: #eeeeec;
+  background-color: rgba(23, 25, 26, 0.95);
+  border: 1px solid rgba(238, 238, 236, 0.2);
+  .modal-dialog-content-box {
+    padding: 24px;
+  }
+  .run-dialog-entry {
+    width: 20em;
+    margin-bottom: 6px;
+  }
+  .run-dialog-error-box {
+    padding-top: 16px;
+    spacing: 6px;
+  }
+  .run-dialog-button-box {
+    padding-top: 1em;
+  }
+  .run-dialog-label {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #d6d6d1;
+    padding-bottom: .4em;
+  }
+}
+
+.mount-dialog-subject, .end-session-dialog-subject {
+  font-size: 14pt;
+}

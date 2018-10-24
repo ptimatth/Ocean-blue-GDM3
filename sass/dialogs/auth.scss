@@ -1,0 +1,193 @@
+/* Auth Dialogs */
+
+.framed-user-icon {
+  margin-top: 4px;
+  margin-left: 4px;
+  background-size: contain;
+  border: 2px solid #eeeeec;
+  color: #eeeeec;
+  border-radius: 36px;
+  &:hover {
+    border-color: white;
+    color: white;
+  }
+}
+
+.login-dialog-banner-view {
+  padding-top: 24px;
+  max-width: 23em;
+}
+
+.login-dialog {
+  border: none;
+  background-color: transparent;
+  .modal-dialog-button-box {
+    background-color: #c4c4c4;
+    spacing: 3px;
+  }
+  .modal-dialog-button {
+    padding: 3px 18px;
+    &:default {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.8);
+      border-color: rgba(0, 0, 0, 0.7);
+      box-shadow: inset 0 1px #4f5245;
+      text-shadow: 0 1px black;
+      icon-shadow: 0 1px black;
+      &:hover, &:focus {
+        background-color: rgba(255, 255, 255, 0.4);
+        color: rgba(255, 255, 255, 0.8);
+        box-shadow: inset 0 1px #6d5d69;
+        text-shadow: 0 1px black;
+        icon-shadow: 0 1px black;
+      }
+      &:active {
+        color: rgba(255, 255, 255, 0.8);
+        border-color: #e95420;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 0 black;
+        text-shadow: none;
+        icon-shadow: none;
+      }
+      &:insensitive {
+        color: rgba(255, 255, 255, 0.8);
+        border-color: #e95420;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: none;
+        text-shadow: none;
+        icon-shadow: none;
+      }
+    }
+  }
+}
+
+.login-dialog-logo-bin {
+  padding: 24px 0px;
+}
+
+.login-dialog-banner {
+  color: #d6d6d1;
+}
+
+.login-dialog-button-box {
+  spacing: 5px;
+}
+
+.login-dialog-message-warning {
+  color: #f57900;
+}
+
+.login-dialog-message-hint {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.login-dialog-user-selection-box {
+  padding: 100px 0px;
+}
+
+.login-dialog-not-listed-label {
+  padding-left: 2px;
+}
+
+.login-dialog-not-listed-button {
+  &:focus .login-dialog-not-listed-label, &:hover .login-dialog-not-listed-label {
+    color: #eeeeec;
+  }
+}
+
+.login-dialog-not-listed-label {
+  font-size: 90%;
+  font-weight: bold;
+  color: #d6d6d1;
+  padding-left: 40px;
+  padding-top: 1em;
+}
+
+l .login-dialog-user-list-view {
+  -st-vfade-offset: 1em;
+}
+
+.login-dialog-user-list {
+  spacing: 12px;
+  padding: .2em;
+  width: 23em;
+  &:expanded .login-dialog-user-list-item {
+    &:selected {
+      background-color: #c4c4c4;
+      color: #000000;
+    }
+    &:logged-in {
+      border-right: 2px solid #c4c4c4;
+      color: #c4c;
+    }
+  }
+}
+
+.login-dialog-user-list-item {
+  border-radius: 48px;
+  padding: .2em;
+  color: #a6a69b;
+  &:ltr {
+    padding-right: 1em;
+  }
+  &:rtl {
+    padding-left: 1em;
+  }
+  .login-dialog-timed-login-indicator {
+    height: 2px;
+    margin: 2px 0 0 0;
+    background-color: #eeeeec;
+  }
+  &:focus .login-dialog-timed-login-indicator {
+    background-color: #ffffff;
+  }
+}
+
+.login-dialog-username {
+  color: #004256;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.user-widget-label {
+  color: #004256;
+  font-size: 120%;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 15px;
+  &:ltr {
+    padding-left: 18px;
+  }
+  &:rtl {
+    padding-right: 18px;
+  }
+}
+
+.login-dialog-prompt-layout {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  spacing: 8px;
+  width: 23em;
+}
+
+.login-dialog-prompt-label {
+  color: #bebeb6;
+  font-size: 110%;
+  padding-top: 1em;
+}
+
+.login-dialog-session-list-button {
+  StIcon {
+    icon-size: 1.25em;
+  }
+  color: #a6a69b;
+  &:hover, &:focus {
+    color: #eeeeec;
+  }
+  &:active {
+    color: #747467;
+  }
+}

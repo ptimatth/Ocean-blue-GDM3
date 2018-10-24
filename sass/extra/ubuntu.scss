@@ -1,0 +1,99 @@
+/*
+ * Ubuntu Theme additional modifications and overrides
+ */
+
+/* default ubuntu font */
+
+stage {
+  font-family: Ubuntu, Cantarell, Sans-Serif;
+}
+
+
+/* Ubuntu color selection */
+
+/* background color for most of UI elements like background of dialogs, shell, OSD, also, main button color */
+$bg-default: #3f3e39;
+/* submenu background on main color */
+$bg-sub-menu: #3a3a34;
+/* separators in system panels */
+$bg-separator: #2c2c28;
+/* lighter border */
+$bg-lighter-border: #e95420;
+/* selection */
+$bg-selection: #dd4814;
+/* darker (borders) */
+$bg-lighter-border: #bb3e11;
+/* hover buttons */
+$bg-hover-button: rgba(238, 238, 236, 0.1);
+/* modal dialogs borders, workspace switcher… */
+$bg-modal: rgba(238, 238, 236, 0.2);
+/* note: a lot of variations of alpha around 238, 238, 236, following the shell */
+/* example: search entry icon: default (not hover) */
+$fc-default: rgba(238, 238, 236, 0.7);
+/* hovered is mostly white, like all active text */
+$fc-hover: #eeeeec;
+/* lockscreen color */
+$fc-lockscreen: #2c001e;
+
+/* switch colors */
+
+.toggle-switch-us:checked {
+  background-image: url("ubuntu-toggle-on-us.svg");
+}
+
+.toggle-switch-intl:checked {
+  background-image: url("ubuntu-toggle-on-intl.svg");
+}
+
+/* font color in switcher */
+
+.switcher-list .item-box:outlined {
+  color: $bg-selection;
+}
+
+/* no radius on tile preview */
+
+.tile-preview-left.on-primary, .tile-preview-right.on-primary, .tile-preview-left.tile-preview-right.on-primary {
+  border-radius: 0;
+}
+
+/* our unlock screen isn't fully transparent */
+
+#panel {
+  &.unlock-screen, &.login-screen, &.lock-screen {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .panel-corner {
+    -panel-corner-background-color: transparent;
+    &:active, &:overview, &:focus {
+      -panel-corner-radius: 0;
+    }
+  }
+  &.solid {
+    background-gradient-direction: vertical;
+    background-gradient-start: #58554d;
+    background-gradient-end: $bg-default;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+    .panel-corner {
+      -panel-corner-background-color: transparent;
+    }
+  }
+}
+
+/* no border radius in panel */
+
+/* panel color */
+
+/* active buttons are highlighted */
+
+.message-list-clear-button.button:active, .notification-banner .notification-button:active {
+  background-color: $bg-selection;
+}
+
+/* notification selected */
+
+/* window close ubuntu image */
+
+.window-close {
+  background-image: url("ubuntu-close-window.svg");
+}
