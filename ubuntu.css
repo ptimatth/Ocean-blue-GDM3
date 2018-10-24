@@ -1730,9 +1730,9 @@ StScrollBar {
 .login-dialog-not-listed-label {
   font-size: 90%;
   font-weight: bold;
-  color: #a6a69b;
+  color: #d6d6d1;
   padding-left: 40px;
-  padding-top: 1em; }
+  padding-top: 1em; }l
 
 .login-dialog-user-list-view {
   -st-vfade-offset: 1em; }
@@ -1849,14 +1849,15 @@ StScrollBar {
 
 #panel.lock-screen {
   background-color: rgba(52, 54, 46, 0.5); }
-
+#lo
   .screen-shield-background {
   background: black;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
 
 #lockDialogGroup {
-  background: #2c001e url(file:///usr/share/backgrounds/bg-boat.jpg);
-  background-repeat: repeat; }
+  background: #2c001e url(file:///usr/share/backgrounds/bg-gdm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
   background-color: rgba(63, 63, 57, 0.3); }
