@@ -13,7 +13,20 @@ for r in `gresource list $gst`; do
         gresource extract $gst $r >$workdir/${r#\/org\/gnome\/shell/}
 done
 
-sudo cp $workdir/bg-boat.jpg /usr/share/backgrounds/bg-gdm.jpg
+
+printf "Would you want spacex background (y/N)?  -> "
+
+read withSpaceX
+
+
+if  [ $withSpaceX == "y" ]; then
+	echo "You have choose spacex"
+	sudo cp $workdir/bg-spacex.jpg /usr/share/backgrounds/bg-gdm.jpg
+else
+	echo "You have choose the boat"
+	sudo cp $workdir/bg-boat.jpg /usr/share/backgrounds/bg-gdm.jpg	
+fi
+
 cp $workdir/ubuntu.css ./theme/gnome-shell.css
 cp $workdir/gnome-shell-theme.gresource.xml $workdir/theme/
 
