@@ -1,0 +1,15 @@
+/* Slider */
+
+.slider {
+  height: 1em;
+  -barlevel-height: 0.3em;
+  -barlevel-background-color: $btn-border-color-insensitive;
+  -barlevel-border-color: $entry-border-color;
+  -barlevel-active-background-color: $bg-selection;
+  -barlevel-active-border-color: $bg-lighter-border;
+  -barlevel-overdrive-color: #d51010;
+  -barlevel-overdrive-border-color: #a60c0c;
+  -barlevel-overdrive-separator-width: 0.2em;
+  -barlevel-border-width: 1px;
+  -slider-handle-radius: 6px;
+}

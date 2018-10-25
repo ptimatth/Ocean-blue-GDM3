@@ -1,6 +1,5 @@
 /* NETWORK DIALOGS */
 
-
 .nm-dialog {
   max-height: 34em;
   min-height: 31em;
@@ -34,7 +33,7 @@
 }
 
 .nm-dialog-scroll-view {
-  border: 2px solid #1f1f1c;
+  border: 2px solid $fc-linked;
 }
 
 .nm-dialog-header {
@@ -47,7 +46,7 @@
   padding: 12px;
   spacing: 20px;
   &:selected {
-    background-color: #dd4814;
+    background-color: $bg-selection;
     color: #ffffff;
   }
 }

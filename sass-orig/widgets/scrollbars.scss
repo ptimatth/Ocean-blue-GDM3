@@ -1,0 +1,39 @@
+/* Scrollbars */
+
+StScrollView {
+  &.vfade {
+    -st-vfade-offset: 68px;
+  }
+  &.hfade {
+    -st-hfade-offset: 68px;
+  }
+}
+
+StScrollBar {
+  padding: 0;
+}
+
+StScrollView StScrollBar {
+  min-width: 14px;
+  min-height: 14px;
+}
+
+StScrollBar {
+  StBin#trough {
+    border-radius: 0;
+    background-color: transparent;
+  }
+  StButton {
+    &#vhandle, &#hhandle {
+      border-radius: 8px;
+      background-color: #a6a8a7;
+      margin: 3px;
+    }
+    &#vhandle:hover, &#hhandle:hover {
+      background-color: #cacbc9;
+    }
+    &#vhandle:active, &#hhandle:active {
+      background-color: #215d9c;
+    }
+  }
+}

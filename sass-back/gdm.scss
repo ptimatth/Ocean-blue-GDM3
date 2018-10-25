@@ -1,0 +1,88 @@
+/* Copyright 2009, 2015 Red Hat, Inc.
+ *
+ * Portions adapted from Mx's data/style/default.css
+ *   Copyright 2009 Intel Corporation
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU Lesser General Public License,
+ * version 2.1, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+
+/* GLOBALS */
+
+stage {
+  font-family: Cantarell, Sans-Serif;
+  font-size: 11pt;
+  color: #eeeeec;
+}
+
+
+/* EXTRA / THEMING */
+@import 'extra/default.scss';
+@import 'extra/ubuntu.scss';
+
+/* WIDGETS */
+@import 'widgets/button.scss';
+@import 'widgets/entries.scss';
+@import 'widgets/scrollbars.scss';
+@import 'widgets/slider.scss';
+@import 'widgets/checkboxes.scss';
+@import 'widgets/switches.scss';
+@import 'widgets/links.scss';
+
+/* DIALOGS */
+@import 'dialogs/access.scss';
+@import 'dialogs/audio-selection.scss';
+@import 'dialogs/end-session.scss';
+@import 'dialogs/extention.scss';
+@import 'dialogs/geolocation.scss';
+@import 'dialogs/inhibit-shortcut.scss';
+@import 'dialogs/message.scss';
+@import 'dialogs/modal.scss';
+@import 'dialogs/network.scss';
+@import 'dialogs/network-agent.scss';
+@import 'dialogs/password.scss';
+@import 'dialogs/polkit.scss';
+@import 'dialogs/shell-mount-operation.scss';
+@import 'dialogs/auth.scss';
+
+
+/* MENUS */
+@import 'menu/popover-menu.scss';
+
+/* OSD */
+@import 'osd/osd.scss';
+@import 'osd/pad.scss';
+
+/* TOP BAR */
+@import 'top-bar/panel.scss';
+@import 'top-bar/calendar.scss';
+@import 'top-bar/message.scss';
+@import 'top-bar/system-menu.scss';
+
+
+/* COMMON */
+@import 'common/overview.scss';
+@import 'common/dashboard.scss';
+@import 'common/app-vault-grid.scss';
+@import 'common/notification.scss';
+@import 'common/eeky-things.scss';
+@import 'common/osk.scss';
+@import 'common/screen-shield.scss';
+@import 'common/looking-glass.scss';
+
+#lockDialogGroup {
+  background: #2c001e url(file:///usr/share/backgrounds/bg-gdm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -5,19 +5,34 @@ $bg-sub-menu: #3a3a34;
 /* separators in system panels */
 $bg-separator: #2c2c28;
 /* lighter border */
-$bg-lighter-border: #e95420;
+$bg-lighter-border: rgba(0, 0, 0, 0.7);
 /* selection */
-$bg-selection: #dd4814;
+$bg-selection: #215d9c;
 /* darker (borders) */
-$bg-lighter-border: #bb3e11;
+$bg-lighter-border: #184472;
 /* hover buttons */
 $bg-hover-button: rgba(238, 238, 236, 0.1);
 /* modal dialogs borders, workspace switcher… */
 $bg-modal: rgba(238, 238, 236, 0.2);
 
+$bg-modal-login-buton: rgba(33, 93, 156, 0.7);
+$fc-modal-login-buton: white;
+
+
+
+$bg-modal-buton: none;
+
+$bg-linked:#2e3436;
+
+
 $bg-modal-focus: rgba(255, 255, 255, 0.3);
 
+$bg-modal-insensitive: rgba(66, 72, 73, 0.7);
+
 $bg-modal-active: rgba(255, 255, 255, 0.1);
+
+
+
 
 
 /* note: a lot of variations of alpha around 238, 238, 236, following the shell */
@@ -25,8 +40,32 @@ $bg-modal-active: rgba(255, 255, 255, 0.1);
 $fc-default: rgba(238, 238, 236, 0.7);
 /* hovered is mostly white, like all active text */
 $fc-hover: #eeeeec;
+
+$fc-linked: #eeeeec;
+
+$fc-entry: #eeeeec;
 /* lockscreen color */
 $fc-lockscreen: #2c001e;
 
 /* shadow color default */
 $sc-default: black;
+
+$btn-border-radius: 3px;
+$btn-border-width: 1px; 
+$btn-border-color: rgba(0, 0, 0, 0.7);
+$btn-border-color-insensitive: #333636;
+
+$btn-height: auto;
+
+$user-icon-margin: auto;
+$user-icon-border-radius: 3px;
+
+
+
+$entry-padding: 3px;
+$entry-border-color: #1c1f1f;
+$entry-font-size: 100%;
+$entry-bg-color: rgba(255, 255, 255, 0.5);
+
+$bs-linked: #454f52;
+$bs-modal-login-buton: #5d696d;
