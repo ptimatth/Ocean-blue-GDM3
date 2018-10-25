@@ -1,6 +1,6 @@
 #!/bin/sh
 gst=/usr/share/gnome-shell/gnome-shell-theme.gresource
-workdir=./
+workdir=$PWD
 
 for r in `gresource list $gst`; do
 	r=${r#\/org\/gnome\/shell/}
@@ -21,19 +21,19 @@ read withSpaceX
 
 if  [ $withSpaceX == "y" ]; then
 	echo "You have choose spacex"
-	sudo cp $workdir/bg-spacex.jpg /usr/share/backgrounds/bg-gdm.jpg
+	cp $workdir/bg-spacex.jpg $workdir/theme/background.jpg
 else
 	echo "You have choose the boat"
-	sudo cp $workdir/bg-boat.jpg /usr/share/backgrounds/bg-gdm.jpg	
+	sudo cp $workdir/bg-spacex.jpg $workdir/theme/background.jpg
 fi
 
-cp $workdir/gdm.css ./theme/gnome-shell.css
+cp $workdir/gdm.css $workdir/theme/gnome-shell.css
 cp $workdir/gnome-shell-theme.gresource.xml $workdir/theme/
 
 cd $workdir/theme
 
 glib-compile-resources gnome-shell-theme.gresource.xml && sudo cp gnome-shell-theme.gresource /usr/share/gnome-shell/
 cd $workdir
-rm -rf $workdir/theme
+# rm -rf $workdir/theme
 
 echo "enjoy !"

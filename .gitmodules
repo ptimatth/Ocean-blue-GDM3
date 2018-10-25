@@ -1,0 +1,3 @@
+[submodule "sass/base"]
+	path = sass/base
+	url = https://github.com/GNOME/gnome-shell-sass.git
