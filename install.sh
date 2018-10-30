@@ -24,8 +24,12 @@ if  [ $withSpaceX == "y" ]; then
 	cp $workdir/bg-spacex.jpg $workdir/theme/background.jpg
 else
 	echo "You have choose the boat"
-	sudo cp $workdir/bg-spacex.jpg $workdir/theme/background.jpg
+	sudo cp $workdir/bg-boat.jpg $workdir/theme/background.jpg
 fi
+
+sass $workdir/sass/gdm.scss > gdm.css
+
+sed 's/.*#lockDialogGroup {\n*/#lockDialogGroup {\r\n  background: #2e3436 url(resource:\/\/\/org\/gnome\/shell\/theme\/noise-texture.png);}./' gdm.css
 
 cp $workdir/gdm.css $workdir/theme/gnome-shell.css
 cp $workdir/gnome-shell-theme.gresource.xml $workdir/theme/

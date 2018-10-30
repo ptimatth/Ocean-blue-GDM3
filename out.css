@@ -2272,6 +2272,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 #lockDialogGroup {
   background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
+  background-repeat: repeat;
 }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
@@ -2387,13 +2388,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 #lockDialogGroup {
   background-repeat: no-repeat;
   background: url(resource:///org/gnome/shell/theme/background.jpg);
-  background-size: cover;
 }
 
-/*#lockDialogGroup {
-  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
-  background-repeat: repeat;
-}*/
 .button {
   border-radius: 25px;
 }

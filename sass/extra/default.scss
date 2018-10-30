@@ -1,5 +1,10 @@
 #lockDialogGroup {
+  background-repeat: no-repeat;
   background: url(resource:///org/gnome/shell/theme/background.jpg);
   background-size: cover;
-  background-repeat: no-repeat; 
 }
+
+/*#lockDialogGroup {
+  background: #2e3436 url(resource:///org/gnome/shell/theme/noise-texture.png);
+  background-repeat: repeat;
+}*/

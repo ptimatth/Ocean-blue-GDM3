@@ -1,3 +1,5 @@
+@import '../../base/_colors.scss';
+
 // Blacks
 $jet: #181818;
 $inkstone: #3D3D3D;
@@ -17,3 +19,8 @@ $yellow: #F89B0F;
 $green: #3EB34F;
 $blue: #19B6EE;
 $purple: #762572;
+
+$selected_fg_color: #ffffff;
+$selected_bg_color: $orange;
+
+@import './_dark-colors.scss';

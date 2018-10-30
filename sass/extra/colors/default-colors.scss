@@ -1,0 +1,8 @@
+@import '../../base/_colors.scss';
+
+@if($variant == 'light'){
+	@import './_light-colors.scss';
+}
+@else{
+	@import './_dark-colors.scss';
+}

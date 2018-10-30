@@ -1,0 +1,28 @@
+@import '../../base/_colors.scss';
+
+// Blacks
+$jet: #7e8d92; // Input background, sroll selector right // selected shadow
+$inkstone: yellow; //  Aucun effet trouvé sur l'ecran de login light
+$slate: #eeeeec; // Login: face border, text - color, topbar: over-color;
+$graphite: yellow; //  Aucun effet trouvé sur l'ecran de login light
+
+// Whites
+$white: yellow; //  Aucun effet trouvé sur l'ecran de login light
+$porcelain: yellow; // Aucun effet trouvé sur l'ecran de login light
+$silk: yellow; // Aucun effet trouvé sur l'ecran de login light
+$ash: yellow; // Aucun effet trouvé sur l'ecran de login light
+
+// Utility
+$red: #ED3146;
+$orange: #E95420;
+$yellow: #F89B0F;
+$green: #3EB34F;
+$blue: #19B6EE;
+$purple: #762572;
+
+$selected_fg_color: #7e8d92; //date selected text
+$selected_bg_color: #c4c4c4;  //define The user selected background, left slifer and selected button
+
+$bg_color: #3D3D3D; // agit sur le BG principal;
+
+@import './_light-colors.scss';

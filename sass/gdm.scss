@@ -1,8 +1,18 @@
 /* used to generate the css files */
-$variant: light;
-// @import 'extra/ubuntu-colors.scss';
-@import 'base/_colors.scss';
-@import 'base/_high-contrast-colors.scss';
+$variant: 'dark';
+
+/*
+ * here, we select the theme var to integrate
+ */
+// @import 'extra/colors/default-colors.scss'; // default
+// @import 'extra/colors/ubuntu-colors.scss';  // ubuntu
+@import 'extra/colors/ocean-blue-colors.scss'; // OceanBlue
+/*
+ * Here we install the extra / override css class
+ */
+
+/* Normal processing */
 @import 'base/_drawing.scss';
 @import 'base/_common.scss';
-@import 'extra/default.scss';
+// @import 'extra/default.scss'; // default
+@import 'extra/ocean-blue.scss';
